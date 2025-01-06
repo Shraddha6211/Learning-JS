@@ -1,44 +1,35 @@
-// let marks= [85, 97,44, 37, 76, 60];
-// for( let i=0;i<marks.length;i++){
-//     let sum=0;
-//     sum=sum+marks[i];
-//     total=marks.length;
-// }
-// console.log(total);
+// //For a given array of numbers print the square of each value using the forEach loop
+// let arr=[2,3,5,6,7];
+// arr.forEach((val)=>{
+//     console.log("The values in the array are",val);
+// });
+// arr.forEach(function printSquare(val){
+//     console.log("Their squares will be :", val*val);
+// });
 
-// let sum=0;
-// for(let val of marks){
-//     sum=sum+val;
-// }
-// console.log(sum);
-// let avg= sum/marks.length;
-// console.log(`Average Marks is: ${avg}`);
+// Practice Question
+// We are given array of marks of students. Filter out the marks of students that scored 90+.
+// let arr=[25,99,34,67,79,90,89,91];
+// const marks=arr.filter((val)=>{
+//     return val >=90;
+// });
+// console.log(marks);
 
-// //Practice Question -2
-// let items=[250,645,300,900,50];
-// for(let i=0;i<items.length;i++){
-//     offer=items[i]/10;
-//     items[i]=items[i]-offer;
-// }
-// console.log(`Discounted Prices are: ${items}`);
-
-// //Array Methods
-// let arr=[1,2,5,8,9,6,7,12];
-// console.log(arr);
-// let val1=arr.splice(2,3);
-// console.log(val1);
-// let val2=arr.splice(2,0,501,202,111);
-// console.log(val2);
-
-// Practice question
-let company=["Blooomberg","Microsoft", "Uber","Google","IBM","Netflix"];
-console.log(company);
-let val=company.shift();
-console.log("Deleted from the first line:",val);
-console.log(company);
-let val2=company.splice (1,1,"Ola");
-console.log(company);
-let val3=company.splice(5,0,"Amazon");
-console.log(company);
-company.push("Apple");
+//Take a number n as input from user.Create an array of numbers from 1 to n.
+let n = prompt("Enter a number: ");
+let arr = [];
+for (let i = 1; i <= n; i++) {
+  arr[i - 1] = i;
+}
+console.log(arr);
+//Use the reduce method to calculate the sum of all numbers in the array.
+let sum= arr.reduce((prev, curr)=>{
+    return prev+curr;
+});
+console.log("Sum:",sum);
+//Use the reduce method to calculate product of all numbers in the array.
+let product= arr.reduce((prev, curr)=>{
+    return prev*curr;
+});
+console.log("Product: " ,product);
 
