@@ -26,7 +26,12 @@ for (const key in obj) {
 // }
 
 // Write a function to find mean of 5 number.
-
+function mean(a, b, c, d, e){
+    return a+b+c+d+e
+}
+sum= mean(9, 15, 16, 19, 21);
+result= sum/5;
+console.log("The mean of five numbers will be: ", result);
 //for of loop is used to display the elements of an arary like the characters of a string.
 //while loop is used when it is acceptable that the loop won't run even once
 //do while loop is used when it is required that the loop runs at least once
