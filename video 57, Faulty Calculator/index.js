@@ -12,7 +12,8 @@ This faulty calculator does following:
 It performs wrong operation 10% of the times
 */
 
-
+//This code runs only on the webpage because it has parse float used in it. 
+//cannot run in the terminal hence to make a faulty calendar first assign math random to a variable 'x' and if 'x' is lesser than 0.1 use faulty operators else use correct operators
 const num1 = parseFloat(prompt("Enter a number:"));
 const num2 = parseFloat(prompt("Enter another number:"));
 const operator = prompt('Enter the operator (+, -, *, /):');
