@@ -10,6 +10,7 @@ for(let i=0; i<arr.length;i++){
     Factorial*=arr[i];
 }
 console.log(`The factorial of ${num} is ${Factorial}.`);
+console.log(`The factorial of ${num} is ${Factorial}.`);
 //Using Reduce array function
 // let num= parseFloat(prompt("Enter a number:"));
 // let arr=[];
