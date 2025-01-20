@@ -7,10 +7,10 @@ for(let i=1; i<=num; i++){
 }
 let Fact=1;
 for(let i=0; i<arr.length;i++){
-    Factorial*=arr[i];
+    Fact*=arr[i];
 }
-console.log(`The factorial of ${num} is ${Factorial}.`);
-console.log(`The factorial of ${num} is ${Factorial}.`);
+console.log(`The factorial of ${num} is ${Fact}.`);
+
 //Using Reduce array function
 // let num= parseFloat(prompt("Enter a number:"));
 // let arr=[];
