@@ -5,7 +5,7 @@ let arr=[];
 for(let i=1; i<=num; i++){
     arr[i-1]=i;
 }
-let Factorial=1;
+let Fact=1;
 for(let i=0; i<arr.length;i++){
     Factorial*=arr[i];
 }
